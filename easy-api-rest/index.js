@@ -23,8 +23,8 @@ app.use('/users',usersRouter);
 app.use('/plans',plansRouter);
 app.use('/templates',templatesRouter);
 
-
-app.listen(8888, ()=>{
+const PORT = process.env.PORT | 8888;
+app.listen(PORT, ()=>{
     console.log("Servidor iniciado en puerto 8888");
 });
 
